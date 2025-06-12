@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #1e2124;
+  color: white;
+}
+
+textarea {
+  resize: none;
+}
+
+textarea:focus {
+  outline: none;
+} 

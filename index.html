@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UKRWhiz - Quiz App</title>
+  <link rel="stylesheet" href="public/styles.css">
+</head>
+<body>
+  <main class="container">
+    <h1 class="title">UKRWhiz</h1>
+    <p class="subtitle">1,000+ quizzes to challenge you and your friends on all topics!</p>
+    
+    <div class="quiz-form">
+      <h2 class="form-title">Enter Quiz Question</h2>
+      <p class="form-subtitle">Paste your question or upload an image.</p>
+      
+      <div class="tabs">
+        <button class="tab-btn active" id="text-tab">Text Question</button>
+        <button class="tab-btn" id="image-tab">Upload Image</button>
+      </div>
+      
+      <form id="question-form">
+        <div class="question-input-container active" id="text-input-container">
+          <textarea id="question-input" placeholder="Paste your question here..."></textarea>
+        </div>
+        
+        <div class="question-input-container" id="image-input-container">
+          <div class="upload-container">
+            <label for="image-upload" class="upload-label">Upload Image</label>
+            <input type="file" id="image-upload" accept="image/*" class="hidden">
+          </div>
+          <textarea id="ocr-input" placeholder="Paste OCR text here..."></textarea>
+        </div>
+        
+        <button type="submit" id="submit-btn" class="answer-btn">Answer</button>
+      </form>
+      
+      <div class="answer-container" id="answer-container">
+        <h3 class="answer-title">Answer:</h3>
+        <div id="answer-text" class="answer-text"></div>
+      </div>
+    </div>
+  </main>
+  <script src="public/script.js"></script>
+</body>
+</html> 
